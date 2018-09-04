@@ -19,7 +19,7 @@ namespace FxMachineLib.Core
         
         protected override void UpdateEffect()
         {
-            transform.position = _tran.position + _offset;
+            if (_tran) transform.position = _tran.position + _offset;
         }
     }
 }
